@@ -8,7 +8,7 @@ public:
    void SetNum1(int numVal) { num1 = numVal; }
    void SetNum2(int numVal) { num2 = numVal; }
    int GetNum1() const { return num1; }
-   int GetNum2() const { return num1; }
+   int GetNum2() const { return num2; }
    int GetAverage() const;
 
 private:
@@ -17,7 +17,7 @@ private:
 };
 
 int StatsInfo::GetAverage() const {
-   return num1 + num2 / 2;
+   return (num1 + num2 )/ 2;
 }
 // END StatsInfo class
 

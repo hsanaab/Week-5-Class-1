@@ -5,11 +5,16 @@ class Demo
 {
 	private:	
 		static int X;
+    int y;
 
 	public:
-		static void fun()
+    void setY(int myNum){
+      y = myNum;
+    }
+		 void fun()
 		{
 			cout <<"Value of X: " << X << endl;
+      cout <<"Value of y: " << y << endl;
 		}
 };
 
@@ -19,9 +24,11 @@ int Demo :: X =10;
 
 int main()
 {
-	Demo X;
+	Demo myobj;
 
-	X.fun();
+	myobj.fun();
+  myobj.setY(42);
+
 	
 	return 0;
 }

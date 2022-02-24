@@ -5,9 +5,9 @@ private:
   int num;
   char ch;
 public:
-  void setMyValues(int num, char ch){
-    this->num =num;
-    this->ch=ch;
+  void setMyValues(int myNum, char myCh){
+    num = myNum;
+    ch= myCh;
   }
   void displayMyValues(){
     cout<<num<<endl;

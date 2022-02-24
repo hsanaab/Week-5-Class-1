@@ -7,7 +7,7 @@ private:
 public:
 	OperatorOverload() : x(10) {}
 	void operator ++() {
-		x = x + 2;
+		this -> x = this -> x + 2;
 	}
 	void Print() {
 		cout << "The Count is: " << x;
